@@ -1,0 +1,489 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		423453B32951F11C009AF74E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423453B22951F11C009AF74E /* AppDelegate.swift */; };
+		423453B52951F11C009AF74E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423453B42951F11C009AF74E /* SceneDelegate.swift */; };
+		423453B72951F11C009AF74E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423453B62951F11C009AF74E /* ViewController.swift */; };
+		423453BC2951F11E009AF74E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 423453BB2951F11E009AF74E /* Assets.xcassets */; };
+		423453BF2951F11E009AF74E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 423453BD2951F11E009AF74E /* LaunchScreen.storyboard */; };
+		423453C72951F2C9009AF74E /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423453C62951F2C9009AF74E /* Coordinator.swift */; };
+		423453CA2951F436009AF74E /* NavigationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423453C92951F436009AF74E /* NavigationVC.swift */; };
+		423453CE2951F4C7009AF74E /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423453CD2951F4C7009AF74E /* UIColorExtension.swift */; };
+		423453D129520DEC009AF74E /* UIFontExtansion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423453D029520DEC009AF74E /* UIFontExtansion.swift */; };
+		423453D52952234F009AF74E /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423453D42952234F009AF74E /* SettingsController.swift */; };
+		DA0FEE45CB866F23FBBCC123 /* Pods_Lucky8.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D61C83F47FD19786230BA98A /* Pods_Lucky8.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1513C3C30B0068F20BA5A701 /* Pods-Lucky8.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lucky8.debug.xcconfig"; path = "Target Support Files/Pods-Lucky8/Pods-Lucky8.debug.xcconfig"; sourceTree = "<group>"; };
+		423453AF2951F11C009AF74E /* Lucky8.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lucky8.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		423453B22951F11C009AF74E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		423453B42951F11C009AF74E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		423453B62951F11C009AF74E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		423453BB2951F11E009AF74E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		423453BE2951F11E009AF74E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		423453C02951F11E009AF74E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		423453C62951F2C9009AF74E /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		423453C92951F436009AF74E /* NavigationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationVC.swift; sourceTree = "<group>"; };
+		423453CD2951F4C7009AF74E /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		423453D029520DEC009AF74E /* UIFontExtansion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtansion.swift; sourceTree = "<group>"; };
+		423453D42952234F009AF74E /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
+		7DB63C68400A463AB565EA97 /* Pods-Lucky8.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lucky8.release.xcconfig"; path = "Target Support Files/Pods-Lucky8/Pods-Lucky8.release.xcconfig"; sourceTree = "<group>"; };
+		D61C83F47FD19786230BA98A /* Pods_Lucky8.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lucky8.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		423453AC2951F11C009AF74E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA0FEE45CB866F23FBBCC123 /* Pods_Lucky8.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F4D4AC15508FC2154C617F9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1513C3C30B0068F20BA5A701 /* Pods-Lucky8.debug.xcconfig */,
+				7DB63C68400A463AB565EA97 /* Pods-Lucky8.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		3FA0637B9D2B078CFEE37A1B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D61C83F47FD19786230BA98A /* Pods_Lucky8.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		423453A62951F11C009AF74E = {
+			isa = PBXGroup;
+			children = (
+				423453C62951F2C9009AF74E /* Coordinator.swift */,
+				423453B12951F11C009AF74E /* Lucky8 */,
+				423453B02951F11C009AF74E /* Products */,
+				0F4D4AC15508FC2154C617F9 /* Pods */,
+				3FA0637B9D2B078CFEE37A1B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		423453B02951F11C009AF74E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				423453AF2951F11C009AF74E /* Lucky8.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		423453B12951F11C009AF74E /* Lucky8 */ = {
+			isa = PBXGroup;
+			children = (
+				423453B22951F11C009AF74E /* AppDelegate.swift */,
+				423453B42951F11C009AF74E /* SceneDelegate.swift */,
+				423453BB2951F11E009AF74E /* Assets.xcassets */,
+				423453D229522319009AF74E /* Screens */,
+				423453CB2951F4A1009AF74E /* Helpers */,
+				423453C82951F422009AF74E /* NavigationBar */,
+				423453BD2951F11E009AF74E /* LaunchScreen.storyboard */,
+				423453C02951F11E009AF74E /* Info.plist */,
+			);
+			path = Lucky8;
+			sourceTree = "<group>";
+		};
+		423453C82951F422009AF74E /* NavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				423453C92951F436009AF74E /* NavigationVC.swift */,
+			);
+			path = NavigationBar;
+			sourceTree = "<group>";
+		};
+		423453CB2951F4A1009AF74E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				423453CF29520DD0009AF74E /* Font */,
+				423453CC2951F4B4009AF74E /* Color */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		423453CC2951F4B4009AF74E /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				423453CD2951F4C7009AF74E /* UIColorExtension.swift */,
+			);
+			path = Color;
+			sourceTree = "<group>";
+		};
+		423453CF29520DD0009AF74E /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				423453D029520DEC009AF74E /* UIFontExtansion.swift */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		423453D229522319009AF74E /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				423453D32952232A009AF74E /* Settings */,
+				423453B62951F11C009AF74E /* ViewController.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		423453D32952232A009AF74E /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				423453D42952234F009AF74E /* SettingsController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		423453AE2951F11C009AF74E /* Lucky8 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 423453C32951F11E009AF74E /* Build configuration list for PBXNativeTarget "Lucky8" */;
+			buildPhases = (
+				4C4E8FEFD7B32A6AB771182C /* [CP] Check Pods Manifest.lock */,
+				423453AB2951F11C009AF74E /* Sources */,
+				423453AC2951F11C009AF74E /* Frameworks */,
+				423453AD2951F11C009AF74E /* Resources */,
+				14B182BA01C09AFCA07EECEC /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Lucky8;
+			productName = Lucky8;
+			productReference = 423453AF2951F11C009AF74E /* Lucky8.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		423453A72951F11C009AF74E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					423453AE2951F11C009AF74E = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 423453AA2951F11C009AF74E /* Build configuration list for PBXProject "Lucky8" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 423453A62951F11C009AF74E;
+			productRefGroup = 423453B02951F11C009AF74E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				423453AE2951F11C009AF74E /* Lucky8 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		423453AD2951F11C009AF74E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				423453BF2951F11E009AF74E /* LaunchScreen.storyboard in Resources */,
+				423453BC2951F11E009AF74E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		14B182BA01C09AFCA07EECEC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Lucky8/Pods-Lucky8-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Lucky8/Pods-Lucky8-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Lucky8/Pods-Lucky8-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4C4E8FEFD7B32A6AB771182C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Lucky8-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		423453AB2951F11C009AF74E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				423453D52952234F009AF74E /* SettingsController.swift in Sources */,
+				423453C72951F2C9009AF74E /* Coordinator.swift in Sources */,
+				423453D129520DEC009AF74E /* UIFontExtansion.swift in Sources */,
+				423453B72951F11C009AF74E /* ViewController.swift in Sources */,
+				423453B32951F11C009AF74E /* AppDelegate.swift in Sources */,
+				423453B52951F11C009AF74E /* SceneDelegate.swift in Sources */,
+				423453CA2951F436009AF74E /* NavigationVC.swift in Sources */,
+				423453CE2951F4C7009AF74E /* UIColorExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		423453BD2951F11E009AF74E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				423453BE2951F11E009AF74E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		423453C12951F11E009AF74E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		423453C22951F11E009AF74E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		423453C42951F11E009AF74E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1513C3C30B0068F20BA5A701 /* Pods-Lucky8.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Lucky8/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Lucky8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		423453C52951F11E009AF74E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DB63C68400A463AB565EA97 /* Pods-Lucky8.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Lucky8/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Lucky8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		423453AA2951F11C009AF74E /* Build configuration list for PBXProject "Lucky8" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				423453C12951F11E009AF74E /* Debug */,
+				423453C22951F11E009AF74E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		423453C32951F11E009AF74E /* Build configuration list for PBXNativeTarget "Lucky8" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				423453C42951F11E009AF74E /* Debug */,
+				423453C52951F11E009AF74E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 423453A72951F11C009AF74E /* Project object */;
+}
