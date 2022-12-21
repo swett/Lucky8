@@ -30,7 +30,9 @@ class ViewController: UIViewController {
         setupNavigationBar()
         setupUI()
     }
-
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        .lightContent
+    }
 
 }
 

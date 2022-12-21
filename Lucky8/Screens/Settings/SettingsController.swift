@@ -9,12 +9,16 @@ import UIKit
 
 class SettingsController: UIViewController {
 
+    //MARK: UI
+    var tableView: UITableView!
     
     //MARK: Coordinator
     private let coordinator: CoordinatorProtocol
+    private let viewModel: SettingsViewModelProtocol
     
-    init(coordinator: CoordinatorProtocol) {
+    init(coordinator: CoordinatorProtocol, viewModel: SettingsViewModelProtocol) {
         self.coordinator = coordinator
+        self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -29,7 +33,9 @@ class SettingsController: UIViewController {
         setupUI()
         // Do any additional setup after loading the view.
     }
-    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        .lightContent
+    }
 
 }
 
@@ -52,9 +58,54 @@ extension SettingsController {
     }
     func setupUI() {
         view.backgroundColor = .mainBgColor
+        tableView = UITableView().then({ table in
+            view.addSubview(table)
+            table.backgroundColor = .mainBgColor
+            table.register(SettingsCell.self, forCellReuseIdentifier: SettingsCell.id)
+            table.dataSource = self
+            table.delegate = self
+            table.separatorStyle = .none
+            table.snp.makeConstraints { make in
+                make.edges.equalToSuperview()
+            }
+        })
     }
 }
 
+extension SettingsController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        viewModel.numberOfRows(in: section)
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: SettingsCell.id, for: indexPath) as! SettingsCell
+        let cellViewModel = viewModel.model(at: indexPath)
+        cell.setup(with: cellViewModel)
+        return cell
+    }
+}
+
+extension SettingsController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        switch indexPath.row {
+        case 0:
+            print("0")
+            break;
+        case 1:
+            print("1")
+            break;
+        case 2:
+            coordinator.showHowItWorks()
+            break;
+        case 3:
+            print("3")
+            break;
+        default:
+            print("something Wrong")
+        }
+        
+    }
+}
 
 extension SettingsController {
     @objc func backToMainScreen() {

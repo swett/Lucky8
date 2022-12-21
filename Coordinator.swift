@@ -16,6 +16,7 @@ protocol CoordinatorProtocol {
     func start()
     func showSettings()
     func showMainScreen()
+    func showHowItWorks()
 }
 
 
@@ -44,7 +45,8 @@ extension Coordinator: CoordinatorProtocol {
     }
     
     func showSettings() {
-        let settingsController = SettingsController(coordinator: self)
+        let viewModel = SettingsViewModel()
+        let settingsController = SettingsController(coordinator: self, viewModel: viewModel)
         
         navigationController.pushViewController(settingsController, animated: true)
     }
@@ -52,6 +54,11 @@ extension Coordinator: CoordinatorProtocol {
     func showMainScreen() {
         let mainController = ViewController(coordinator: self)
         navigationController.pushViewController(mainController, animated: true)
+    }
+    
+    func showHowItWorks() {
+        let howItWorksController = HowItWorksController(coordinator: self)
+        navigationController.pushViewController(howItWorksController, animated: true)
     }
     
 }

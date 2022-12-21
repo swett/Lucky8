@@ -17,6 +17,9 @@
 		423453CE2951F4C7009AF74E /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423453CD2951F4C7009AF74E /* UIColorExtension.swift */; };
 		423453D129520DEC009AF74E /* UIFontExtansion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423453D029520DEC009AF74E /* UIFontExtansion.swift */; };
 		423453D52952234F009AF74E /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423453D42952234F009AF74E /* SettingsController.swift */; };
+		423453D7295372A8009AF74E /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423453D6295372A8009AF74E /* SettingsViewModel.swift */; };
+		423453D9295374A7009AF74E /* SettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423453D8295374A7009AF74E /* SettingsCell.swift */; };
+		423453DD2953765A009AF74E /* HowItWorksController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423453DC2953765A009AF74E /* HowItWorksController.swift */; };
 		DA0FEE45CB866F23FBBCC123 /* Pods_Lucky8.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D61C83F47FD19786230BA98A /* Pods_Lucky8.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +37,9 @@
 		423453CD2951F4C7009AF74E /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		423453D029520DEC009AF74E /* UIFontExtansion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtansion.swift; sourceTree = "<group>"; };
 		423453D42952234F009AF74E /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
+		423453D6295372A8009AF74E /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		423453D8295374A7009AF74E /* SettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCell.swift; sourceTree = "<group>"; };
+		423453DC2953765A009AF74E /* HowItWorksController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowItWorksController.swift; sourceTree = "<group>"; };
 		7DB63C68400A463AB565EA97 /* Pods-Lucky8.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lucky8.release.xcconfig"; path = "Target Support Files/Pods-Lucky8/Pods-Lucky8.release.xcconfig"; sourceTree = "<group>"; };
 		D61C83F47FD19786230BA98A /* Pods_Lucky8.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lucky8.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -137,6 +143,7 @@
 		423453D229522319009AF74E /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				423453DB29537630009AF74E /* HowItWorks */,
 				423453D32952232A009AF74E /* Settings */,
 				423453B62951F11C009AF74E /* ViewController.swift */,
 			);
@@ -147,8 +154,18 @@
 			isa = PBXGroup;
 			children = (
 				423453D42952234F009AF74E /* SettingsController.swift */,
+				423453D6295372A8009AF74E /* SettingsViewModel.swift */,
+				423453D8295374A7009AF74E /* SettingsCell.swift */,
 			);
 			path = Settings;
+			sourceTree = "<group>";
+		};
+		423453DB29537630009AF74E /* HowItWorks */ = {
+			isa = PBXGroup;
+			children = (
+				423453DC2953765A009AF74E /* HowItWorksController.swift */,
+			);
+			path = HowItWorks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,10 +286,13 @@
 				423453C72951F2C9009AF74E /* Coordinator.swift in Sources */,
 				423453D129520DEC009AF74E /* UIFontExtansion.swift in Sources */,
 				423453B72951F11C009AF74E /* ViewController.swift in Sources */,
+				423453D9295374A7009AF74E /* SettingsCell.swift in Sources */,
 				423453B32951F11C009AF74E /* AppDelegate.swift in Sources */,
 				423453B52951F11C009AF74E /* SceneDelegate.swift in Sources */,
 				423453CA2951F436009AF74E /* NavigationVC.swift in Sources */,
 				423453CE2951F4C7009AF74E /* UIColorExtension.swift in Sources */,
+				423453DD2953765A009AF74E /* HowItWorksController.swift in Sources */,
+				423453D7295372A8009AF74E /* SettingsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
