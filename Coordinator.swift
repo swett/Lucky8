@@ -12,7 +12,7 @@ import UIKit
 
 protocol CoordinatorProtocol {
     var rootViewController: UIViewController? { get }
-    
+    func first()
     func start()
     func showSettings()
     func showMainScreen()
@@ -36,6 +36,11 @@ final class Coordinator {
 extension Coordinator: CoordinatorProtocol {
     var rootViewController: UIViewController? {
         navigationController
+    }
+    
+    func first() {
+        let tagController = TagListController(coordinator: self)
+        navigationController.pushViewController(tagController, animated: true)
     }
     
     func start() {

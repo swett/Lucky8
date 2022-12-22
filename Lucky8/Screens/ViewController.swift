@@ -11,6 +11,10 @@ import SnapKit
 
 class ViewController: UIViewController {
 
+    //MARK: UI
+    var ballImageView: UIImageView!
+    var predictionLabel: UILabel!
+    var hintLabel: UILabel!
     //MARK: coordinator
     private let coordinator: CoordinatorProtocol
     
@@ -39,6 +43,47 @@ class ViewController: UIViewController {
 extension ViewController {
     func setupUI() {
         view.backgroundColor = .mainBgColor
+        
+        ballImageView = UIImageView().then({ imageView in
+            view.addSubview(imageView)
+            imageView.image = UIImage(named: "ball")
+            imageView.contentMode = .scaleAspectFill
+            imageView.snp.makeConstraints { make in
+                make.center.equalToSuperview()
+                make.left.right.equalToSuperview().inset(40)
+            }
+        })
+        
+        predictionLabel = UILabel().then({ label in
+            ballImageView.addSubview(label)
+            label.text = "All gonna be okay"
+            label.font = .rounded(ofSize: 13, weight: .bold)
+            label.textColor = UIColor.mainTextColor.withAlphaComponent(0.8)
+//            label.backgroundColor = .red
+            label.numberOfLines = 2
+            label.textAlignment = .center
+            
+            label.snp.makeConstraints { make in
+                make.center.equalToSuperview()
+                make.width.equalToSuperview().multipliedBy(0.25)
+            }
+        })
+        
+        hintLabel = UILabel().then({ label in
+            view.addSubview(label)
+            label.text = "Shake the phone and think about your question"
+            label.font = .rounded(ofSize: 20, weight: .bold)
+            label.textColor = UIColor.mainTextColor.withAlphaComponent(0.8)
+            label.textAlignment = .center
+            label.numberOfLines = 2
+            
+            label.snp.makeConstraints { make in
+                make.top.equalTo(ballImageView.snp.bottom).offset(48)
+                make.left.right.equalToSuperview().inset(40)
+                make.centerX.equalToSuperview()
+            }
+        })
+        
     }
     
     func setupNavigationBar() {

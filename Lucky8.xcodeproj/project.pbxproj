@@ -20,6 +20,7 @@
 		423453D7295372A8009AF74E /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423453D6295372A8009AF74E /* SettingsViewModel.swift */; };
 		423453D9295374A7009AF74E /* SettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423453D8295374A7009AF74E /* SettingsCell.swift */; };
 		423453DD2953765A009AF74E /* HowItWorksController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423453DC2953765A009AF74E /* HowItWorksController.swift */; };
+		423453E02954AAEF009AF74E /* TagListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423453DF2954AAEF009AF74E /* TagListController.swift */; };
 		DA0FEE45CB866F23FBBCC123 /* Pods_Lucky8.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D61C83F47FD19786230BA98A /* Pods_Lucky8.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +41,7 @@
 		423453D6295372A8009AF74E /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		423453D8295374A7009AF74E /* SettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCell.swift; sourceTree = "<group>"; };
 		423453DC2953765A009AF74E /* HowItWorksController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowItWorksController.swift; sourceTree = "<group>"; };
+		423453DF2954AAEF009AF74E /* TagListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagListController.swift; sourceTree = "<group>"; };
 		7DB63C68400A463AB565EA97 /* Pods-Lucky8.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lucky8.release.xcconfig"; path = "Target Support Files/Pods-Lucky8/Pods-Lucky8.release.xcconfig"; sourceTree = "<group>"; };
 		D61C83F47FD19786230BA98A /* Pods_Lucky8.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lucky8.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -143,6 +145,7 @@
 		423453D229522319009AF74E /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				423453DE2954AAD0009AF74E /* TagList */,
 				423453DB29537630009AF74E /* HowItWorks */,
 				423453D32952232A009AF74E /* Settings */,
 				423453B62951F11C009AF74E /* ViewController.swift */,
@@ -166,6 +169,14 @@
 				423453DC2953765A009AF74E /* HowItWorksController.swift */,
 			);
 			path = HowItWorks;
+			sourceTree = "<group>";
+		};
+		423453DE2954AAD0009AF74E /* TagList */ = {
+			isa = PBXGroup;
+			children = (
+				423453DF2954AAEF009AF74E /* TagListController.swift */,
+			);
+			path = TagList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,6 +303,7 @@
 				423453CA2951F436009AF74E /* NavigationVC.swift in Sources */,
 				423453CE2951F4C7009AF74E /* UIColorExtension.swift in Sources */,
 				423453DD2953765A009AF74E /* HowItWorksController.swift in Sources */,
+				423453E02954AAEF009AF74E /* TagListController.swift in Sources */,
 				423453D7295372A8009AF74E /* SettingsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

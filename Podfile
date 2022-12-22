@@ -11,6 +11,6 @@ inhibit_all_warnings!
   pod 'Then'
   pod 'Alamofire'
   pod 'SDWebImage'
-  
+  pod 'TagListView'
 end
 

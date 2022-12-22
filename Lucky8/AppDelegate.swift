@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = coordinator?.rootViewController
         window?.makeKeyAndVisible()
 
-        coordinator?.start()
+        coordinator?.first()
 
         return true
     }
