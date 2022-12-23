@@ -44,7 +44,7 @@ class TagListController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
-        
+        animate()
     }
 
     
@@ -59,6 +59,7 @@ extension TagListController {
         titleLabel = UILabel().then({ label in
             view.addSubview(label)
             label.font = .rounded(ofSize: 20, weight: .black)
+            label.alpha = 0
             label.text = "What do you wanna to know?"
             label.textColor = .mainTextColor
             label.snp.makeConstraints { make in
@@ -69,6 +70,7 @@ extension TagListController {
     
         tagListView = TagListView().then({ tags in
             view.addSubview(tags)
+            tags.alpha = 0
             tags.delegate = self
             tags.alignment = .left
             tags.paddingX = 40
@@ -77,7 +79,6 @@ extension TagListController {
             tags.marginY = 23
             tags.marginX = 30
             tags.textFont = .rounded(ofSize: 20, weight: .black)
-            
             tags.addTags(["Love","Future","Confidence","Peace","Power","Life","Past","Family","Work", "Health"])
            
             
@@ -90,13 +91,33 @@ extension TagListController {
         })
         
         
-        
     }    
     
 }
 
+extension TagListController {
+    func animate() {
+        
+        UIView.animate(withDuration: 0.15) {
+            self.titleLabel.alpha = 1
+        }
+        UIView.animate(withDuration: 0.35) {
+            self.tagListView.alpha = 1
+        }
+    }
+}
+
+
+
 extension TagListController: TagListViewDelegate {
     func tagPressed(_ title: String, tagView: TagView, sender: TagListView) {
+//        sender.tagViews.forEach { view in
+//            UIView.animate(withDuration: 0.35) {
+//                view.transform = .init(scaleX: 0.85, y: 0.85)
+//            } completion: { com in
+//                view.transform = .identity
+//            }
+//        }
         coordinator.start()
     }
 }

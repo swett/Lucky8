@@ -33,6 +33,7 @@ class HowItWorksController: UIViewController {
         super.viewDidLoad()
         configureNavigation()
         setupUI()
+        animate()
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -89,6 +90,7 @@ extension HowItWorksController {
             label.font = .rounded(ofSize: 16, weight: .regular)
             label.textColor = .mainTextColor
             label.text = text
+            label.alpha = 0
             label.snp.makeConstraints { make in
                 make.top.bottom.equalToSuperview().inset(20)
                 make.left.right.equalToSuperview().inset(32)
@@ -104,5 +106,11 @@ extension HowItWorksController {
 extension HowItWorksController {
     @objc func backToSettings() {
         coordinator.showSettings()
+    }
+    
+    func animate() {
+        UIView.animate(withDuration: 0.65) {
+            self.textLabel.alpha = 1
+        }
     }
 }

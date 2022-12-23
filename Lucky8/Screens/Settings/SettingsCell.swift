@@ -15,6 +15,7 @@ class SettingsCell: UITableViewCell {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
         configureUI()
+        animate()
     }
     
     required init?(coder: NSCoder) {
@@ -43,7 +44,7 @@ private extension SettingsCell {
             label.textColor = .mainTextColor
             
             label.font = .rounded(ofSize: 21, weight: .heavy)
-            
+            label.alpha = 0
             label.snp.makeConstraints { make in
                 
                 make.centerY.equalToSuperview()
@@ -57,6 +58,12 @@ private extension SettingsCell {
 extension SettingsCell {
     func setup(with viewModel: String) {
         titleLabel.text = viewModel
+    }
+    
+    func animate() {
+        UIView.animate(withDuration: 0.65) {
+            self.titleLabel.alpha = 1
+        }
     }
 }
 
