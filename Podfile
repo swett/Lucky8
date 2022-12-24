@@ -12,5 +12,6 @@ inhibit_all_warnings!
   pod 'Alamofire'
   pod 'SDWebImage'
   pod 'TagListView'
+  pod 'SwiftMessages'
 end
 

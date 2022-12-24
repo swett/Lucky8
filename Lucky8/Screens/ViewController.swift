@@ -17,8 +17,6 @@ class ViewController: UIViewController {
     var predictionLabel: UILabel!
     var hintLabel: UILabel!
     
-    //MARK: Predictions
-    var predictions:[String] = ["All gonna be okay", "You gonna be hired", "Something is closing", "Belief in this"]
     //MARK: coordinator
     private let coordinator: CoordinatorProtocol
     
@@ -50,13 +48,16 @@ class ViewController: UIViewController {
     
     override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
         if motion == .motionShake {
-            print("shake")
-            //MARK: Two varients to make vibration sound
+            guard UserDefaultHelper.shared.isVibration else {
+                shakeAnimation()
+                self.predictionLabel.text = UserDefaultHelper.shared.predictionsArray.randomElement()
+                return
+            }
+            //MARK: Two variants to make vibration sound
             shakeAnimation()
 //            AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))
             UIImpactFeedbackGenerator(style: .medium).impactOccurred()
-            print("vibrated")
-            self.predictionLabel.text = predictions.randomElement()
+            self.predictionLabel.text = UserDefaultHelper.shared.predictionsArray.randomElement()
         }
     }
 }
@@ -127,7 +128,7 @@ extension ViewController {
 
 extension ViewController {
     func springAnimation() {
-        UIView.animate(withDuration: 1, delay: 1, usingSpringWithDamping: 0.5, initialSpringVelocity: 5, options: .curveEaseInOut) {
+        UIView.animate(withDuration: 1, delay: 0.3, usingSpringWithDamping: 0.5, initialSpringVelocity: 5, options: .curveEaseInOut) {
             self.ballImageView.snp.updateConstraints { make in
                 make.center.equalToSuperview()
                 make.left.right.equalToSuperview().inset(40)

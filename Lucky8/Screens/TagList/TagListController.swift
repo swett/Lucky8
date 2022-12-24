@@ -111,13 +111,8 @@ extension TagListController {
 
 extension TagListController: TagListViewDelegate {
     func tagPressed(_ title: String, tagView: TagView, sender: TagListView) {
-//        sender.tagViews.forEach { view in
-//            UIView.animate(withDuration: 0.35) {
-//                view.transform = .init(scaleX: 0.85, y: 0.85)
-//            } completion: { com in
-//                view.transform = .identity
-//            }
-//        }
+        UserDefaultHelper.shared.isThemeOfPrediction = title
+        UserDefaultHelper.shared.loadPredictions(with: title)
         coordinator.start()
     }
 }

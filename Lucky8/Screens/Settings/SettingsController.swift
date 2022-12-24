@@ -6,12 +6,13 @@
 //
 
 import UIKit
+import SwiftMessages
 
 class SettingsController: UIViewController {
 
     //MARK: UI
     var tableView: UITableView!
-    
+    var alertView: AlertView!
     //MARK: Coordinator
     private let coordinator: CoordinatorProtocol
     private let viewModel: SettingsViewModelProtocol
@@ -58,6 +59,7 @@ extension SettingsController {
     }
     func setupUI() {
         view.backgroundColor = .mainBgColor
+        
         tableView = UITableView().then({ table in
             view.addSubview(table)
             table.backgroundColor = .mainBgColor
@@ -69,7 +71,17 @@ extension SettingsController {
                 make.edges.equalToSuperview()
             }
         })
+        
+        alertView = AlertView().then({ alert in
+            view.addSubview(alert)
+            
+            alert.snp.makeConstraints { make in
+                make.width.height.equalTo(0)
+//                make.center.equalToSuperview()
+            }
+        })
     }
+
 }
 
 extension SettingsController: UITableViewDataSource {
@@ -89,7 +101,13 @@ extension SettingsController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch indexPath.row {
         case 0:
-            print("0")
+            UserDefaultHelper.shared.isVibration = !UserDefaultHelper.shared.isVibration
+            print(UserDefaultHelper.shared.isVibration)
+            alertView.setupData(with: "Vibration is \(UserDefaultHelper.shared.isVibration ? "on" : "off")")
+            SwiftMessages.show(view: alertView)
+            alertView.snp.updateConstraints { make in
+                make.width.height.equalTo(200)
+            }
             break;
         case 1:
             print("1")

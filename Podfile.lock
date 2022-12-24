@@ -4,6 +4,9 @@ PODS:
     - SDWebImage/Core (= 5.14.2)
   - SDWebImage/Core (5.14.2)
   - SnapKit (5.6.0)
+  - SwiftMessages (9.0.6):
+    - SwiftMessages/App (= 9.0.6)
+  - SwiftMessages/App (9.0.6)
   - TagListView (1.4.1)
   - Then (3.0.0)
 
@@ -11,6 +14,7 @@ DEPENDENCIES:
   - Alamofire
   - SDWebImage
   - SnapKit
+  - SwiftMessages
   - TagListView
   - Then
 
@@ -19,6 +23,7 @@ SPEC REPOS:
     - Alamofire
     - SDWebImage
     - SnapKit
+    - SwiftMessages
     - TagListView
     - Then
 
@@ -26,9 +31,10 @@ SPEC CHECKSUMS:
   Alamofire: 4e95d97098eacb88856099c4fc79b526a299e48c
   SDWebImage: b9a731e1d6307f44ca703b3976d18c24ca561e84
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+  SwiftMessages: f0c7ef4705a570ad6c5e208b611f4333e660ed92
   TagListView: a1c236d17960a0cf64156725a76ce6d73ebce2be
   Then: 844265ae87834bbe1147d91d5d41a404da2ec27d
 
-PODFILE CHECKSUM: 84cc31640e702298eb0f7fb4ee2b874eb2fbed66
+PODFILE CHECKSUM: ba820f3d4211beb1b1e29e8fe15aaa4e272d6019
 
 COCOAPODS: 1.11.3
